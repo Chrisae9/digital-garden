@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  digital-garden:
+    image: chrisae9/garden
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: 'unless-stopped'
+    ports:
+      - '6117:80'
